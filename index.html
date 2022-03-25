@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Review System</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            h1 {font-family: Arial, Helvetica, sans-serif;}
+            h2 {font-family: Arial, Helvetica, sans-serif;}
+            h1{float:left; margin-left: 500px; margin-top: 5%;}
+            h2{float:right;}
+            .rbtn{
+    background-color: lightgreen;border-radius: 25px;font-size:25px;
+    border:none;height:auto; width: auto;padding-left:25px;padding-right: 25px;}
+    .form-popup {
+  display: none;
+  position: fixed;
+  bottom: 520px;
+  right: 500px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form-container {
+  max-width: 500px;
+  padding: 10px;
+  background-color: white;
+}
+    
+        </style>
+    </head>
+    <body>
+        <div class='bor'>
+        <h1>Your Reviews<br>
+            Our Perfection<br>
+                 &<br> 
+              Strength<br>  
+        </h1>
+        <div class='log'>
+        <h2>Login Here</h2><br><br><br><br>
+        <!-- <a href='login.html' target="_parent">
+        <button type="submit" class='logbut' id='loginbtn'>LOGIN</button><br><br></a> -->
+        <button type="submit" class='logbut' id='loginbtn' onclick="openform()">LOGIN</button><br><br></a>
+        <a href="registration.html" target="_parent">
+            <button type="submit" class="rbtn" id="rbutton">REGISTER</button><br>
+        </a>
+        </div>
+        <img src="logo.png">
+        </div>
+
+
+
+        <div class="form-popup" id="myForm">
+            <a href='seeallreviews.html' target="_blank">
+                <button class="rbut" type="button">Show Reviews</button><br>
+                </a>
+            <div class = "form-container">
+            <!-- <h1>Login</h1><br> -->
+            <label for="username"><b>Username:</b></label>
+            <input type="text" placeholder="Enter Username" name="username" id="user" required><br><br>
+        
+            <label for="password"><b>Password:</b></label>
+            <input type="password" placeholder="Enter Password" name="password" id="pass" required><br><br>
+            <button type="submit" onclick="auth()" class="btn">Login</button>
+            </div>
+        </div>
+        <script src="userdb.js"></script>
+    </body>
+</html>

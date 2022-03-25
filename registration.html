@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add New User</title>
+<style>
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+.container {
+  padding: 16px;
+  background-color: white;
+}
+input[type=text], input[type=password] {
+  width: 10%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.rbtn{
+    background-color: lightgreen;border-radius: 25px;font-size:23px;
+    border:none;height: auto; padding-left:25px;padding-right: 25px;
+}
+</style>
+    </head>
+    <body>
+        <div class="container">
+        <h1>Register</h1>
+        <p>Please fill in this form to create an account</p>
+        <hr>
+
+        <label for="firstname"><b>Firstname:</b></label>
+        <input type="text" placeholder="Enter First Name" name="firstname" id="fname" required><br>
+        <label for="lastname"><b>Lastname:</b></label>
+        <input type="text" placeholder="Enter Last Name" name="lastname" id="lname" required><br>
+        <label for="username"><b>Username:</b></label>
+        <input type="text" placeholder="Enter Username" name="username" id="uname" required><br>
+        <label for="password"><b>Password:</b></label>
+        <input type="password" placeholder="Enter Password" name="password" id="pwd" required><span id = "message" style="color:red"> </span><br>
+        <label for="password"><b>Confirm Password:</b></label>
+        <input type="password" placeholder="Confirm Password" name="password" id="cpwd" required><br> 
+        <button type="submit" class="rbtn" onclick="adduser()">Register</button>
+        </div>
+        <script src="userdb.js"></script>
+    </body>
+</html>
